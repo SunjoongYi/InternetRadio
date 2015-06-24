@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="250dip"
+            android:layout_height="70dip"
+            android:hint="방송국명"
+            android:textSize="40dip"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop ="10dp"
+            android:gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/et_contact"
+            android:layout_width="450dip"
+            android:layout_height="70dip"
+            android:hint="주소"
+            android:textSize="40dip"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop ="10dp"   
+            android:gravity="center"         
+            />
+
+        
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="80dip"
+            android:layout_height="30dip"
+            android:hint="이메일"
+            android:singleLine="true"
+            android:visibility="gone"
+            />
+ 		            
+        
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="150dip"
+            android:layout_height="70dip"
+            android:textSize="40dip"
+            android:text="추가"
+            android:onClick="onClick" 
+			android:layout_marginLeft="10dp"
+            android:layout_marginTop ="10dp"   
+            android:gravity="center" 
+            />
+        
+    </LinearLayout>
+
+    <ListView 
+        android:id="@+id/lv_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll_top"        
+        />
+</RelativeLayout>
